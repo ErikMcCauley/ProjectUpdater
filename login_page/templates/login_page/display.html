@@ -1,0 +1,33 @@
+{% extends 'base_layout.html' %}
+
+
+{% block content %}
+   <div class = "projects">
+            <div class = "project">
+                {%  for projects in display %}
+                <div class = "rowA">
+                    <h2 class = "codehead">Project Code</h2>
+                    <h2 class = "code">{{projects.projectCode}}</h2>
+                </div>
+                <div class="content_body">
+                    <div class = "rowB">
+                        <h2 class = "cleavehead cont_bod">Cleaved</h2>
+                        <h2 class = "cleave cont_bod_1">{{projects.cleaved}}</h2>
+                    </div>
+                    <div class="rowC">
+                        <h2 class = "purifiedhead cont_bod">Purified</h2>
+                        <h2 class = "purified cont_bod_1">{{projects.purified}}</h2>
+                    </div>
+                    <div class="rowD">
+                        <h2 class = "AAAhead cont_bod">AAA</h2>
+                        <h2 class = "AAA cont_bod_1">{{projects.AAA}}</h2>
+                    </div>
+                    <div class="rowE">
+                        <h2 class = "Totalhead cont_bod">Total</h2>
+                        <h2 class = "Total cont_bod_1">{{projects.totalProjects}}</h2>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,1 @@
+web: gunicorn Thermolive.wsgi --log-file -

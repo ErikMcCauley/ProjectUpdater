@@ -1,0 +1,18 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ThermoLive</title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+        <div class="header_band">
+            <div class="layout_head">ThermoLive</div>
+        </div>
+        <div class="wrapper">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
