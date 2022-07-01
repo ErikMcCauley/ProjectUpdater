@@ -16,7 +16,7 @@ jedi==0.10.2
 Jinja2==2.9.6
 jsonschema==2.6.0
 MarkupSafe==1.0
-mistune==0.7.4
+mistune==0.8.1
 nbconvert==5.2.1
 nbformat==4.4.0
 nine==1.0.0
